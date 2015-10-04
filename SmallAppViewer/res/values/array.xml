@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="multibrowser_split_list">
+		<item>分割しない</item>
+		<item>上下分割</item>
+		<item>左右分割</item>
+		<item>４分割</item>
+	</string-array>
+	<string-array name="multibrowser_split_setting_label_list">
+		<item>分割しない</item>
+		<item>上下分割</item>
+		<item>左右分割</item>
+		<item>４分割</item>
+		<item>毎回選択する</item>
+	</string-array>
+	<string-array name="multibrowser_split_setting_value_list">
+		<item>none</item>
+		<item>top_bottom</item>
+		<item>left_right</item>
+		<item>4split</item>
+		<item>select</item>
+	</string-array>
+	<string-array name="multibrowser_position_top_bottom_list">
+		<item>上</item>
+		<item>下</item>
+	</string-array>
+	<string-array name="multibrowser_position_right_left_list">
+		<item>右</item>
+		<item>左</item>
+	</string-array>
+	<string-array name="multibrowser_position_4split_list">
+		<item>左上</item>
+		<item>左下</item>
+		<item>右上</item>
+		<item>右下</item>
+	</string-array>
+	<string-array name="_2chmatome_viewurl_label_list">
+		<item>今日もお仕事★ライフ</item>
+		<item>メシウマ速報</item>
+		<item>まとめびじょん</item>
+		<item>ごろ速 〜ごろ寝速報〜</item>
+		<item>Hyper News 2ch</item>
+		<item>U-1速報</item>
+		<item>【2ch】ニュー速クオリティ</item>
+		<item>マジキチ速報</item>
+		<item>れでぃれでぃ</item>
+		<item>VIPPER速報</item>
+		<item>流速VIP</item>
+		<item>二ちゃんまとめ-EVE速-</item>
+		<item>ゴールデンタイムズ</item>
+		<item>ブラブラブラウジング</item>
+		<item>はちま起稿</item>
+		<item>ねたAtoZ</item>
+		<item>ゆるりと　ひじきそくほう</item>
+		<item>VIPPERな俺</item>
+		<item>オレ的ゲーム速報＠刃</item>
+		<item>SIerブログ</item>
+		<item>あじあにゅーす２ちゃんねる-2chｱｼﾞｱﾆｭｰｽ-</item>
+		<item>まとめたニュース</item>
+		<item>アルファルファモザイク</item>
+		<item>コピペ情報局</item>
+		<item>ガジェット2ch</item>
+		<item>カナ速</item>
+		<item>働くモノニュース : 人生VIP職人ブログwww</item>
+		<item>ラビット速報</item>
+		<item>TM速報</item>
+		<item>IT速報</item>
+		<item>政経ch</item>
+		<item>萌えオタニュース速報</item>
+		<item>ひまねっと</item>
+	</string-array>
+	<string-array name="_2chmatome_viewurl_value_list">
+		<item>http://www.kyoumo-life.com/index.rdf</item>
+		<item>http://meshiuma.org/index.rdf</item>
+		<item>http://www.matome-vision.com/index.rdf</item>
+		<item>http://gorosoku.blog.jp/index.rdf</item>
+		<item>http://hypernews.2chblog.jp/index.rdf</item>
+		<item>http://u1sokuhou.ldblog.jp/index.rdf</item>
+		<item>http://news4vip.livedoor.biz/index.rdf</item>
+		<item>http://majikichi.com/index.rdf</item>
+		<item>http://ladylady.jp/feed/</item>
+		<item>http://vippers.jp/index.rdf</item>
+		<item>http://ryusoku.com/index.rdf</item>
+		<item>http://blog.livedoor.jp/luckysoku/index.rdf</item>
+		<item>http://blog.livedoor.jp/goldennews/index.rdf</item>
+		<item>http://brow2ing.doorblog.jp/index.rdf</item>
+		<item>http://blog.esuteru.com/index.rdf</item>
+		<item>http://netaatoz.jp/index.rdf</item>
+		<item>http://hijikisokuhou.doorblog.jp/index.rdf</item>
+		<item>http://blog.livedoor.jp/news23vip/index.rdf</item>
+		<item>http://jin115.com/index.rdf</item>
+		<item>http://sierblog.com/index.rdf</item>
+		<item>http://asianews2ch.jp/index.rdf</item>
+		<item>http://matometanews.com/index.rdf</item>
+		<item>http://alfalfalfa.com/index.rdf</item>
+		<item>http://news.2chblog.jp/index.rdf</item>
+		<item>http://feeds.feedburner.com/gadget2ch/feed</item>
+		<item>http://kanasoku.info/index.rdf</item>
+		<item>http://workingnews.blog117.fc2.com/?xml</item>
+		<item>http://rabitsokuhou.2chblog.jp/index.rdf</item>
+		<item>http://tamasoku.blog35.fc2.com/?xml</item>
+		<item>http://blog.livedoor.jp/itsoku/index.rdf</item>
+		<item>http://fxya.blog129.fc2.com/?xml</item>
+		<item>http://otanews.livedoor.biz/index.rdf</item>
+		<item>http://himarin.net/index.rdf</item>
+	</string-array>
+	
+	<string-array name="_newsmatome_viewurl_label_list">
+		<item>Yahooニュース トピックス 国内</item>
+		<item>Yahooニュース 産経新聞</item>
+		<item>Googleニュース ピックアップ</item>
+		<item>Googleニュース 社会</item>
+		<item>Googleニュース 国際</item>
+		<item>Googleニュース ビジネス</item>
+		<item>Googleニュース 政治</item>
+		<item>Googleニュース エンタメ</item>
+		<item>Googleニュース スポーツ</item>
+		<item>Googleニュース テクノロジー</item>
+		<item>Googleニュース 話題のニュース</item>
+	</string-array>
+	<string-array name="_newsmatome_viewurl_value_list">
+		<item>http://rss.dailynews.yahoo.co.jp/fc/domestic/rss.xml</item>
+		<item>http://headlines.yahoo.co.jp/rss/san-dom.xml</item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=ir]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=y]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=w]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=b]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=p]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=e]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=s]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=rss&topic=t]]></item>
+		<item><![CDATA[https://news.google.com/news?hl=ja&ie=UTF-8&oe=UTF-8&output=rss&topic=po]]></item>
+	</string-array>
+	
+	<string-array name="_2chmatome_browser_label_list">
+		<item>スモールアプリブラウザ</item>
+		<!-- item>スモールアプリマルチブラウザ</item -->
+		<item>デフォルトブラウザ</item>
+	</string-array>
+	
+	<string-array name="_2chmatome_browser_value_list">
+		<item>SmallAppBrowser</item>
+		<!-- item>SmallAppMultiBrowser</item -->
+		<item>Default</item>
+	</string-array>
+	
+	<string-array name="_2chmatome_datetime_label_list">
+		<item>３０分</item>
+		<item>１時間</item>
+		<item>３時間</item>
+		<item>６時間</item>
+		<item>９時間</item>
+		<item>１２時間</item>
+		<item>２４時間</item>
+		<item>２日前</item>
+		<item>３日前</item>
+	</string-array>
+	<string-array name="_2chmatome_datetime_value_list">
+		<item>min,30</item>
+		<item>hour,1</item>
+		<item>hour,3</item>
+		<item>hour,6</item>
+		<item>hour,9</item>
+		<item>hour,12</item>
+		<item>hour,24</item>
+		<item>hour,48</item>
+		<item>hour,72</item>
+	</string-array>
+	
+	<string-array name="_2chmatome_sort_label_list">
+		<item>新しい順</item>
+		<item>古い順</item>
+	</string-array>
+	<string-array name="_2chmatome_sort_value_list">
+		<item>newer</item>
+		<item>older</item>
+	</string-array>
+	
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:hardwareAccelerated="true">
+    <LinearLayout
+        android:id="@+id/clipVeil"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_gravity="left"
+        android:background="#00000000"
+        android:hardwareAccelerated="true" >
+        <TextView
+            android:id="@+id/textClipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hardwareAccelerated="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:layout_gravity="left"
+        android:id="@+id/clipLinearLayout"
+        android:hardwareAccelerated="true"
+        >
+        <Button
+            android:id="@+id/btnCopyClip"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FF0000FF"
+            android:text="@string/copy"
+            android:visibility="gone"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnDelClip"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFFF0000"
+            android:text="@string/delete"
+            android:visibility="gone"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnDetailClip"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FF000000"
+            android:text="@string/detail"
+            android:visibility="gone"
+            android:hardwareAccelerated="true" />
+    </LinearLayout>
+</FrameLayout>

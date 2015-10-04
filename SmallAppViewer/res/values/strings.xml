@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmallAppViewer</string>
+    <string name="app_settings_name">設定</string>
+    <string name="app_browser_name">スモールブラウザ</string>
+    <string name="app_multibrowser_name">マルチスモールブラウザ</string>
+    <string name="app_notification_name">通知リスト</string>
+    <string name="app_clipboard_name">クリップボード</string>
+    <string name="app_2chmatome_name">２ちゃんまとめ</string>
+    <string name="app_newsmatome_name">ニュースまとめ</string>
+    <string name="menu1">Menu1</string>
+    <string name="menu2">Menu2</string>
+    <string name="menu3">Menu3</string>
+    <string name="menu_clicked">Menu item clicked.</string>
+    
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="chrome">Chrome</string>
+    <string name="facebookmessenger">FacebookMessenger</string>
+    <string name="googledrive">Drive</string>
+    <string name="playmemoriesonline">PlayMemoriesOnline</string>
+    <string name="actualsize">等倍</string>
+    <string name="resize_x2">x2</string>
+    <string name="resize_x4">x4</string>
+    
+    <string name="menu">Menu</string>
+    <string name="maximization">最大化</string>
+    <string name="minimization">最小化</string>
+    <string name="returned">元に戻す</string>
+    <string name="javascriptEnable">JavaScriptを有効化</string>
+    <string name="javascriptDisable">JavaScriptを無効化</string>
+    <string name="shared">共有</string>
+    <string name="send">送信</string>
+    <string name="save">内部ストレージへ保存</string>
+    <string name="settings">設定</string>
+    <string name="delete">削除</string>
+    <string name="detail">詳細</string>
+    <string name="all_clear">すべて削除</string>
+    <string name="info">情報</string>
+    <string name="copy">コピー</string>
+    
+    <string name="app_multibrowser_select_split_mode">分割モードを選択してください</string>
+    <string name="app_multibrowser_select_position">位置を選択してください</string>
+    <string name="app_multibrowser_select_open">開く</string>
+    <string name="app_multibrowser_select_save">保存</string>
+    <string name="app_multibrowser_select_cancel">キャンセル</string>
+    
+    <string name="pin_completed">ピン止めしました。</string>
+    <string name="pin_deleted">ピンを削除しました。</string>
+    <string name="_2chmatome_empty">まとめ記事がありません</string>
+    
+    <string name="title_bar_view_setting">ブラウザタイトルバー表示設定</string>
+    <string name="action_bar_view_setting">ブラウザアクションバー表示設定</string>
+    <string name="action_bar_view_detail_setting">ブラウザアクションバー拡張設定</string>
+    <string name="multibrowser_setting">マルチブラウザ設定</string>
+    <string name="_2chmatome_setting">２ちゃんまとめ設定</string>
+    <string name="alpha_setting">UI半透明設定</string>
+    <string name="_special_setting">全体半透明設定</string>
+    
+    <string name="app_multibrowser_select_split_mode_title">分割モード選択</string>
+    <string name="_2chmatome_select_viewurl">取得サイト選択</string>
+    <string name="_2chmatome_default_browser">デフォルトブラウザ選択</string>
+    <string name="_2chmatome_javascript">JavaScriptを無効にする</string>
+    <string name="_2chmatome_javascript_summary">スモールアプリブラウザのみ有効な設定です。</string>
+    
+    <string name="minimization_view">最小化ボタンを表示</string>
+    <string name="maximization_view">最大化ボタンを表示</string>
+    <string name="returned_view">元に戻すボタンを表示</string>
+    <string name="refresh_view">更新ボタンを表示</string>
+    <string name="back_view">戻るボタンを表示</string>
+    <string name="forward_view">進むボタンを表示</string>
+    <string name="pin_view">ピン止めボタンを表示</string>
+    <string name="history_view">履歴ボタンを表示</string>
+    <string name="shared_view">共有ボタンを表示</string>
+    <string name="chrome_view">Chromeで開くボタンを表示</string>
+    <string name="close_view">閉じるボタンを表示</string>
+    <string name="multibrowser_enable_view">マルチブラウザを有効にする（β）</string>
+    <string name="multibrowser_enable_view_summary">有効にすると既存のブラウザより機能が制限され、ボタンの表示／非表示設定が効かなくなります。</string>
+    
+    <string name="special_focus_alpha_value_view">半透明度（選択状態）</string>
+    <string name="special_focus_alpha_value_view_summary">スモールアプリを選択したときのUIの半透明度設定です。（0～99）</string>
+    <string name="special_unfocus_alpha_value_view">半透明度（非選択状態）</string>
+    <string name="special_unfocus_alpha_value_view_summary">スモールアプリが選択されていないときのUIの半透明度設定です。（0～99）</string>
+    
+    <string name="special_semialpha_view">全体半透明モード（β）</string>
+    <string name="special_semialpha_view_summary">Xperia Z3向けの半透明モードでスモールアプリが全体的に半透明になります。4.4.4アップデート済みのXperia Z2、lolipopアップデート済みのXperiaも対象です。アプリの再起動後に適用されます。</string>
+    <string name="special_focus_semialpha_value_view">全体の半透明度（選択状態）</string>
+    <string name="special_focus_semialpha_value_view_summary">スモールアプリを選択したときの全体の半透明度設定です。（0～99）</string>
+    <string name="special_unfocus_semialpha_value_view">全体の半透明度（非選択状態）</string>
+    <string name="special_unfocus_semialpha_value_view_summary">スモールアプリが選択されていないときの全体の半透明度設定です。（0～99）</string>
+    <string name="special_mini_semialpha_value_view">半透明度（最小化状態）</string>
+    <string name="special_mini_semialpha_value_view_summary">スモールアプリが最小化されているときの半透明度設定です。（0～99）</string>
+    
+    <string name="bottom_actionbar_view_close_let">下位置へ表示時にボタン位置を入れ替え</string>
+    <string name="bottom_actionbar_view_close_let_summary">ボタンが下位置へ表示された時に、閉じるボタン・Chromeで開くボタンを左側へ移動します。</string>
+    
+    <string name="back_view_title_key">back_view_title_key</string>
+    <string name="forward_view_title_key">forward_view_title_key</string>
+    <string name="chrome_view_title_key">chrome_view_title_key</string>
+    
+    <string name="minimization_view_bar_key">minimization_view_bar_key</string>
+    <string name="maximization_view_bar_key">maximization_view_bar_key</string>
+    <string name="returned_view_bar_key">returned_view_bar_key</string>
+    <string name="refresh_view_bar_key">refresh_view_bar_key</string>
+    <string name="back_view_bar_key">back_view_bar_key</string>
+    <string name="forward_view_bar_key">forward_view_bar_key</string>
+    <string name="pin_view_bar_key">pin_view_bar_key</string>
+    <string name="history_view_bar_key">history_view_bar_key</string>
+    <string name="shared_view_bar_key">shared_view_bar_key</string>
+    <string name="chrome_view_bar_key">chrome_view_bar_key</string>
+    <string name="close_view_bar_key">close_view_bar_key</string>
+    <string name="multibrowser_enable_key">multibrowser_enable_key</string>
+    
+    <string name="special_focus_alpha_value_view_key">special_focus_alpha_value_view_key</string>
+    <string name="special_unfocus_alpha_value_view_key">special_unfocus_alpha_value_view_key</string>
+    
+    <string name="special_semialpha_view_key">special_semialpha_view_key</string>
+    <string name="special_focus_semialpha_value_view_key">special_focus_semialpha_value_view_key</string>
+    <string name="special_unfocus_semialpha_value_view_key">special_unfocus_semialpha_value_view_key</string>
+    <string name="special_mini_semialpha_value_view_key">special_mini_semialpha_value_view_key</string>
+    
+    <string name="bottom_actionbar_view_close_let_bar_key">bottom_actionbar_view_close_let_bar_key</string>
+    <string name="multibrowser_4split_mode_key">multibrowser_4split_mode_key</string>
+    
+    <string name="_2chmatome_select_viewurl_key">_2chmatome_select_viewurl_key</string>
+    <string name="_2chmatome_javascript_key">_2chmatome_javascript_key</string>
+    <string name="_2chmatome_default_browser_key">_2chmatome_default_browser_key</string>
+    
+    <string name="_newsmatome_select_viewurl_key">_newsmatome_select_viewurl_key</string>
+    
+    <string name="api_not_supported">API not supported on this software.</string>
+    <string name="show_webpage">Show web page</string>
+    
+    <string name="init_notification_count">99</string>
+    
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:hardwareAccelerated="true"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            <WebView
+                android:id="@+id/webview0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hardwareAccelerated="true"
+                tools:ignore="NestedWeights" />
+            <LinearLayout
+                android:id="@+id/resizeWidthBar1"
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-24dp"
+                android:background="#ddffffff" >
+            </LinearLayout>
+            <WebView
+                android:id="@+id/webview2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:hardwareAccelerated="true"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/resizeHeightBar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="-24dp"
+            android:background="#ddffffff" >
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/layoutWebviewBottom">
+            <WebView
+                android:id="@+id/webview1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hardwareAccelerated="true"
+                tools:ignore="NestedWeights" />
+            <LinearLayout
+                android:id="@+id/resizeWidthBar2"
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-24dp"
+                android:background="#ddffffff" >
+            </LinearLayout>
+            <WebView
+                android:id="@+id/webview3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:hardwareAccelerated="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnClose"
+            android:background="@drawable/ic_close"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnBack"
+            android:background="@drawable/ic_back"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnForward"
+            android:background="@drawable/ic_forward"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnRefresh"
+            android:background="@drawable/ic_refresh"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnShared"
+            android:background="@drawable/ic_shared" 
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnChrome"
+            android:background="@drawable/ic_chrome"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnMinimized"
+            android:background="@drawable/ic_window_minimized"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnNormal"
+            android:background="@drawable/ic_window_normal"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+        <Button
+            android:id="@+id/btnFfitted"
+            android:background="@drawable/ic_window_fitted"
+            style="@style/smallapp_browser_smallapp_buttom"
+            android:hardwareAccelerated="true" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBarForWeb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginTop="-4dp"
+        android:hardwareAccelerated="true" />
+</FrameLayout>

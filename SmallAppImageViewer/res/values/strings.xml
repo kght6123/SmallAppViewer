@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmallAppImageViewer</string>
+    <string name="app_gallery_name">ギャラリー</string>
+    <string name="app_image_view_name">イメージビュー</string>
+    
+    <string name="save_error_for_not_local">ダウンロード中のため、内部ストレージへ保存できません。</string>
+    <string name="image_notfound_error">スモールアプリのブラウザ上で画像を長押しするか、画像の共有で利用可能です。</string>
+    <string name="image_view_help_message">ピンチイン・アウトで拡大・縮小が可能です。（ウィンドウサイズも追従します）</string>
+    
+</resources>

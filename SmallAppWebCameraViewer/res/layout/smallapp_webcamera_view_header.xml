@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:hardwareAccelerated="true" >
+
+    <ImageView
+        android:id="@+id/shared"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="@dimen/actionBarIconSize"
+        android:layout_height="@dimen/actionBarIconSize"
+        android:src="@drawable/ic_shared" 
+        android:contentDescription="@string/shared"
+        android:alpha="@dimen/btnAlpha"
+        android:hardwareAccelerated="true" />
+    
+    <ImageView
+        android:id="@+id/wc_option_menu"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="@dimen/actionBarIconSize"
+        android:layout_height="@dimen/actionBarIconSize"
+        android:src="@drawable/ic_menu_more" 
+        android:contentDescription="@string/menu"
+        android:alpha="@dimen/btnAlpha"
+        android:hardwareAccelerated="true" />
+
+</LinearLayout>

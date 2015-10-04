@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/app_settings_name">
+    <PreferenceCategory android:title="@string/title_bar_view_setting">
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/back_view" android:key="@string/back_view_title_key" android:icon="@drawable/ic_back"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/forward_view" android:key="@string/forward_view_title_key" android:icon="@drawable/ic_forward"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/chrome_view" android:key="@string/chrome_view_title_key" android:icon="@drawable/ic_chrome"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/action_bar_view_setting">
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/minimization_view" android:key="@string/minimization_view_bar_key" android:icon="@drawable/ic_window_minimized"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/maximization_view" android:key="@string/maximization_view_bar_key" android:icon="@drawable/ic_window_fitted"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/returned_view" android:key="@string/returned_view_bar_key" android:icon="@drawable/ic_window_normal"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/refresh_view" android:key="@string/refresh_view_bar_key" android:icon="@drawable/ic_refresh"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/back_view" android:key="@string/back_view_bar_key" android:icon="@drawable/ic_back"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/forward_view" android:key="@string/forward_view_bar_key" android:icon="@drawable/ic_forward"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/pin_view" android:key="@string/pin_view_bar_key" android:icon="@drawable/ic_pin"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/history_view" android:key="@string/history_view_bar_key" android:icon="@drawable/ic_history"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/shared_view" android:key="@string/shared_view_bar_key" android:icon="@drawable/ic_shared"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/chrome_view" android:key="@string/chrome_view_bar_key" android:icon="@drawable/ic_chrome"/>
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/close_view" android:key="@string/close_view_bar_key" android:icon="@drawable/ic_close"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/action_bar_view_detail_setting">
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/bottom_actionbar_view_close_let" android:key="@string/bottom_actionbar_view_close_let_bar_key" android:summary="@string/bottom_actionbar_view_close_let_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/multibrowser_setting">
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/multibrowser_enable_view" android:summary="@string/multibrowser_enable_view_summary" android:key="@string/multibrowser_enable_key" />
+        <ListPreference android:title="@string/app_multibrowser_select_split_mode_title" android:key="@string/multibrowser_4split_mode_key" android:entries="@array/multibrowser_split_setting_label_list" android:dialogTitle="@string/app_multibrowser_select_split_mode" android:entryValues="@array/multibrowser_split_setting_value_list" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/_2chmatome_setting">
+        <MultiSelectListPreference android:title="@string/_2chmatome_select_viewurl" android:key="@string/_2chmatome_select_viewurl_key" android:entries="@array/_2chmatome_viewurl_label_list" android:dialogTitle="@string/_2chmatome_select_viewurl" android:entryValues="@array/_2chmatome_viewurl_value_list" android:defaultValue="@array/_2chmatome_viewurl_value_list" />
+        <ListPreference android:title="@string/_2chmatome_default_browser" android:key="@string/_2chmatome_default_browser_key" android:entries="@array/_2chmatome_browser_label_list" android:dialogTitle="@string/_2chmatome_default_browser" android:entryValues="@array/_2chmatome_browser_value_list" />
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/_2chmatome_javascript" android:summary="@string/_2chmatome_javascript_summary" android:key="@string/_2chmatome_javascript_key"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/alpha_setting">
+        <EditTextPreference android:key="@string/special_focus_alpha_value_view_key" android:summary="@string/special_focus_alpha_value_view_summary" android:title="@string/special_focus_alpha_value_view" android:inputType="number"  android:maxLength="2" android:defaultValue="99"/>
+        <EditTextPreference android:key="@string/special_unfocus_alpha_value_view_key" android:summary="@string/special_unfocus_alpha_value_view_summary" android:title="@string/special_unfocus_alpha_value_view" android:inputType="number"  android:maxLength="2" android:defaultValue="30" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/_special_setting">
+        <jp.kght6123.smallappcommon.custom.AvoidDefectSwitchPreference android:title="@string/special_semialpha_view" android:key="@string/special_semialpha_view_key" android:summary="@string/special_semialpha_view_summary" android:defaultValue="true"/>
+        <EditTextPreference android:key="@string/special_focus_semialpha_value_view_key" android:summary="@string/special_focus_semialpha_value_view_summary" android:title="@string/special_focus_semialpha_value_view" android:inputType="number"  android:maxLength="2" android:defaultValue="90" />
+        <EditTextPreference android:key="@string/special_unfocus_semialpha_value_view_key" android:summary="@string/special_unfocus_semialpha_value_view_summary" android:title="@string/special_unfocus_semialpha_value_view" android:inputType="number"  android:maxLength="2" android:defaultValue="40" />
+        <EditTextPreference android:key="@string/special_mini_semialpha_value_view_key" android:summary="@string/special_mini_semialpha_value_view_summary" android:title="@string/special_mini_semialpha_value_view" android:inputType="number"  android:maxLength="2" android:defaultValue="50" />
+        </PreferenceCategory>
+</PreferenceScreen>

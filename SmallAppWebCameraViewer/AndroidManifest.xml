@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="jp.kght6123.smallappwebcameraviewer"
+	android:versionCode="1"
+	android:versionName="0.0.W.0.1"
+	android:hardwareAccelerated="true" xmlns:tools="http://schemas.android.com/tools">
+	
+	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" tools:ignore="OldTargetApi"/>
+	
+	<uses-permission android:name="com.sony.smallapp.permission.SMALLAPP" />
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+	<application
+		android:allowBackup="true"
+		android:label="@string/app_name"
+		android:icon="@drawable/ic_launcher"
+		android:largeHeap="true"
+		android:hardwareAccelerated="true">
+		<uses-library android:name="com.sony.smallapp.framework" />
+		
+		<service
+			android:name=".smallapp.SmallWebCameraViewApplication"
+			android:exported="true" 
+			android:label="@string/app_webcamera_view_name"
+			android:icon="@drawable/ic_happy"
+			android:hardwareAccelerated="true" tools:ignore="ExportedService">
+			<!-- android:permission="com.sony.smallapp.permission.SMALLAPP" -->
+			<intent-filter>
+				<action android:name="com.sony.smallapp.SmallApplication" />
+				<action android:name="com.sony.smallapp.intent.action.MAIN" />
+				<category android:name="com.sony.smallapp.intent.category.LAUNCHER" />
+			</intent-filter>
+		</service>
+		
+		<activity
+			android:name=".activity.WebCameraViewActionDelegatorActivity"
+			android:label="@string/app_webcamera_view_name"
+			android:excludeFromRecents="true"
+			android:theme="@android:style/Theme.Translucent"
+			android:icon="@drawable/ic_happy"
+			android:hardwareAccelerated="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<!-- service android:name="jp.kght6123.smallappcommon.service.DownloadService"></service-->
+		
+	</application>
+	
+</manifest>

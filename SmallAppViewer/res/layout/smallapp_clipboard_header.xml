@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:hardwareAccelerated="true" >
+    <ImageView
+        android:id="@+id/btnClipMinimized"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="@dimen/actionBarIconSize"
+        android:layout_height="@dimen/actionBarIconSize"
+        android:src="@drawable/ic_window_minimized" 
+        android:contentDescription="@string/minimization"
+        android:alpha="@dimen/btnAlpha"
+        android:hardwareAccelerated="true" />
+    <ImageView
+        android:id="@+id/btnClipNormal"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="@dimen/actionBarIconSize"
+        android:layout_height="@dimen/actionBarIconSize"
+        android:src="@drawable/ic_window_normal" 
+        android:contentDescription="@string/returned"
+        android:alpha="@dimen/btnAlpha"
+        android:hardwareAccelerated="true" />
+    <ImageView
+        android:id="@+id/btnClipFfitted"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="@dimen/actionBarIconSize"
+        android:layout_height="@dimen/actionBarIconSize"
+        android:src="@drawable/ic_window_fitted" 
+        android:contentDescription="@string/maximization"
+        android:alpha="@dimen/btnAlpha"
+        android:hardwareAccelerated="true" />
+    <ImageView
+        android:id="@+id/btnClipAllClear"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="@dimen/actionBarIconSize"
+        android:layout_height="@dimen/actionBarIconSize"
+        android:src="@drawable/ic_all_clear" 
+        android:contentDescription="@string/all_clear"
+        android:alpha="@dimen/btnAlpha"
+        android:hardwareAccelerated="true" />
+</LinearLayout>

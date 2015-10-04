@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:hardwareAccelerated="true" >
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:hardwareAccelerated="true">
+    <ListView
+        android:id="@+id/clipListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hardwareAccelerated="true">
+    </ListView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginLeft="@dimen/actionBarMarginLeft"
+        android:layout_marginRight="@dimen/actionBarMarginLeft"
+        android:hardwareAccelerated="true"
+        >
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/cb_btnClose"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:background="@drawable/ic_close"
+            android:alpha="@dimen/btnAlpha"
+            android:hardwareAccelerated="true" />
+    </LinearLayout>
+</FrameLayout>

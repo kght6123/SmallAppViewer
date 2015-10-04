@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SmallAppWebCameraViewer</string>
+    <string name="app_webcamera_view_name">Webカメラビュー</string>
+    
+    <string name="save_error_for_not_local">ダウンロード中のため、内部ストレージへ保存できません。</string>
+    <string name="image_notfound_error">スモールアプリのブラウザ上で画像を長押しするか、画像の共有で利用可能です。</string>
+    <string name="image_view_help_message">ピンチイン・アウトで拡大・縮小が可能です。（ウィンドウサイズも追従します）</string>
+    
+    <string name="start">開始</string>
+    <string name="stop">停止</string>
+    
+</resources>

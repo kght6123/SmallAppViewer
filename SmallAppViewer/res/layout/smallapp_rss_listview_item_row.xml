@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rssItem_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/rssItem_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="15sp"
+        android:lines="1"
+        android:singleLine="true"
+        android:ellipsize="marquee" 
+         />
+    <TextView
+        android:id="@+id/rssItem_descr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:minLines="1"
+        android:maxLines="3"
+        android:ellipsize="end" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        >
+        <TextView
+            android:id="@+id/rssItem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/rssItem_creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+</LinearLayout>

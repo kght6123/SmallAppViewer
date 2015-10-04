@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="translucent_background">#00000000</drawable>
+    
+    <style name="Translucent" parent="android:Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="smallapp_browser_webview_control_area_left">
+        <item name="android:layout_width">@dimen/iconSize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_gravity">left|top</item>
+        <item name="android:layout_marginLeft">@dimen/actionBarMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/actionBarMarginLeft</item>
+        <item name="android:gravity">top|center_vertical</item>
+    </style>
+    <style name="smallapp_browser_webview_control_area_right">
+        <item name="android:layout_width">@dimen/iconSize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_gravity">right|top</item>
+        <item name="android:layout_marginLeft">@dimen/actionBarMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/actionBarMarginLeft</item>
+        <item name="android:gravity">top|center_vertical</item>
+    </style>
+    <style name="smallapp_browser_webview_control_area_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/iconSize</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="smallapp_browser_webview_control_area_bottom2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/iconSize</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginRight">48dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="smallapp_browser_smallapp_control_area_left">
+        <item name="android:layout_width">@dimen/iconSize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">left|bottom</item>
+        <item name="android:layout_marginLeft">@dimen/actionBarMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/actionBarMarginLeft</item>
+        <item name="android:gravity">bottom|center_vertical</item>
+    </style>
+    <style name="smallapp_browser_smallapp_control_area_right">
+        <item name="android:layout_width">@dimen/iconSize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">right|bottom</item>
+        <item name="android:layout_marginLeft">@dimen/actionBarMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/actionBarMarginLeft</item>
+        <item name="android:layout_marginBottom">48dp</item>
+        <item name="android:gravity">bottom|center_vertical</item>
+    </style>
+    <style name="smallapp_browser_smallapp_control_area_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/iconSize</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginRight">48dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="smallapp_browser_smallapp_control_area_bottom2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/iconSize</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="smallapp_browser_move_control_area_left">
+        <item name="android:layout_width">@dimen/iconSize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginLeft">@dimen/actionBarMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/actionBarMarginLeft</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="smallapp_browser_move_control_area_right">
+        <item name="android:layout_width">@dimen/iconSize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginLeft">@dimen/actionBarMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/actionBarMarginLeft</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="smallapp_browser_move_control_area_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/iconSize</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="smallapp_browser_smallapp_buttom">
+        <item name="android:layout_width">@dimen/iconSize</item>
+        <item name="android:layout_height">@dimen/iconSize</item>
+        <item name="android:alpha">@dimen/btnAlpha</item>
+    </style>
+</resources>

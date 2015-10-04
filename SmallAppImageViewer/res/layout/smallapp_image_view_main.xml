@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:hardwareAccelerated="true"
+    android:orientation="vertical" >
+
+    <jp.kght6123.smallappcommon.custom.GestureDetectView
+        xmlns:app="http://jp.kght6123.smallappviewer/kght"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_image_view_name"
+        android:hardwareAccelerated="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBarForImageView"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginTop="-4dp"
+        android:hardwareAccelerated="true" />
+
+    <LinearLayout
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/actionBarMarginLeft"
+        android:layout_marginRight="@dimen/actionBarMarginLeft"
+        android:layout_marginTop="48dp"
+        android:gravity="left"
+        android:hardwareAccelerated="true"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded" >
+
+        <!--
+             Button
+            android:id="@+id/iv_btnSave"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_save" /
+        -->
+
+        <Button
+            android:id="@+id/iv_btnActualSize"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:alpha="@dimen/btnAlpha"
+            android:background="@drawable/ic_expansion_1x"
+            android:hardwareAccelerated="true" />
+
+        <Button
+            android:id="@+id/iv_btnResizeX2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:alpha="@dimen/btnAlpha"
+            android:background="@drawable/ic_expansion_2x"
+            android:hardwareAccelerated="true" />
+
+        <Button
+            android:id="@+id/iv_btnResizeX4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:alpha="@dimen/btnAlpha"
+            android:background="@drawable/ic_expansion_4x"
+            android:hardwareAccelerated="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/actionBarMarginLeft"
+        android:layout_marginRight="@dimen/actionBarMarginLeft"
+        android:gravity="bottom"
+        android:hardwareAccelerated="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/iv_btnClose"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:alpha="@dimen/btnAlpha"
+            android:background="@drawable/ic_close"
+            android:hardwareAccelerated="true" />
+    </LinearLayout>
+
+</FrameLayout>

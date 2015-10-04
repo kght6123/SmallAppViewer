@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="menu">Menu</string>
+    <string name="shared">共有</string>
+    <string name="maximization">最大化</string>
+    <string name="minimization">最小化</string>
+    <string name="returned">元に戻す</string>
+    
+    <string name="api_not_supported">API not supported on this software.</string>
+
+    <string name="special_focus_alpha_value_view_key">special_focus_alpha_value_view_key</string>
+    <string name="special_unfocus_alpha_value_view_key">special_unfocus_alpha_value_view_key</string>
+    
+    <string name="special_semialpha_view_key">special_semialpha_view_key</string>
+    
+    <string name="special_focus_semialpha_value_view_key">special_focus_semialpha_value_view_key</string>
+    <string name="special_unfocus_semialpha_value_view_key">special_unfocus_semialpha_value_view_key</string>
+    <string name="special_mini_semialpha_value_view_key">special_mini_semialpha_value_view_key</string>
+    
+</resources>
