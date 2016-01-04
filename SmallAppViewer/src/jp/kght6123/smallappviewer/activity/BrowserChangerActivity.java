@@ -22,7 +22,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 /**
- * HTTP送信のIntentを受け取ってブラウザを選択させるActivity
+ * HTTP送信のIntentを受け取ってブラウザを選択させるActivity、ブラウザチェンジャー
  * 
  * @author Hirotaka
  *
