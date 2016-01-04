@@ -80,6 +80,15 @@
         android:gravity="bottom"
         android:hardwareAccelerated="true"
         android:orientation="vertical" >
+        
+        <!--Button
+            android:id="@+id/wc_btnRefresh"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:alpha="@dimen/btnAlpha"
+            android:background="@drawable/ic_refresh"
+            android:hardwareAccelerated="true" / -->
 
         <Button
             android:id="@+id/wc_btnClose"

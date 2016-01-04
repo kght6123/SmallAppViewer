@@ -9,6 +9,7 @@
     <string name="app_clipboard_name">クリップボード</string>
     <string name="app_2chmatome_name">２ちゃんまとめ</string>
     <string name="app_newsmatome_name">ニュースまとめ</string>
+    <string name="app_browser_changer_name">ブラウザチェンジャー</string>
     <string name="menu1">Menu1</string>
     <string name="menu2">Menu2</string>
     <string name="menu3">Menu3</string>
@@ -45,6 +46,8 @@
     <string name="app_multibrowser_select_open">開く</string>
     <string name="app_multibrowser_select_save">保存</string>
     <string name="app_multibrowser_select_cancel">キャンセル</string>
+    
+    <string name="app_browser_changer_dialog_title">ブラウザを選択してください</string>
     
     <string name="pin_completed">ピン止めしました。</string>
     <string name="pin_deleted">ピンを削除しました。</string>

@@ -9,4 +9,6 @@
     <string name="start">開始</string>
     <string name="stop">停止</string>
     
+    <string name="resize_title">倍率選択</string>
+    
 </resources>

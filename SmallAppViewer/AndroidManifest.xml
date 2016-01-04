@@ -75,10 +75,27 @@
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
 				<data android:scheme="http" />
+				<data android:scheme="https" />
 			</intent-filter>
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity
+			android:name=".activity.BrowserChangerActivity"
+			android:label="@string/app_browser_changer_name"
+			android:excludeFromRecents="true"
+			android:theme="@style/Translucent"
+			android:icon="@drawable/ic_chrome"
+			android:hardwareAccelerated="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="http" />
+				<data android:scheme="https" />
 			</intent-filter>
 		</activity>
 		
@@ -110,6 +127,7 @@
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
 				<data android:scheme="http" />
+				<data android:scheme="https" />
 			</intent-filter>
 		</activity>
 		 -->

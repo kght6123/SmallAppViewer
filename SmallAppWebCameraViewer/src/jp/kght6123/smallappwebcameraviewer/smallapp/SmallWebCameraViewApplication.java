@@ -9,6 +9,9 @@ import jp.kght6123.smallappcommon.utils.SmallApplicationUtils;
 import jp.kght6123.smallappwebcameraviewer.R;
 import jp.kght6123.smallappwebcameraviewer.asynctask.AWCCPrototypeAsyncTask;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
@@ -200,6 +203,9 @@ public class SmallWebCameraViewApplication extends SmallApplication
 		
 		startup();
 		
+		getWindow().setWindowState(WindowState.MINIMIZED);
+		showResizeDialog();
+		
 		Log.d(TAG, "onStart end.");
 	}
 	
@@ -271,6 +277,7 @@ public class SmallWebCameraViewApplication extends SmallApplication
 			}
 		};
 		asyncTask.executeOnExecutor(AsyncTask.SERIAL_EXECUTOR, new Object[]{});
+		asyncTask.cancel(false/*mayInterruptIfRunning*/);
 	}
 	
 	private void setFaviconToMinimizedView(Bitmap icon)
@@ -384,13 +391,28 @@ public class SmallWebCameraViewApplication extends SmallApplication
 //		iv_save.setOnClickListener(this.onClickSaveListener);
 //		
 		final View iv_btnActualSize = findViewById(R.id.wc_btnActualSize);
-		iv_btnActualSize.setOnClickListener(new OnClickResizeListener(this, 1.0f));
+		iv_btnActualSize.setOnClickListener(new OnClickResizeListener(this, ResizeScale.x1.scale));
 		
 		final View iv_resize_x2 = findViewById(R.id.wc_btnResizeX2);
-		iv_resize_x2.setOnClickListener(new OnClickResizeListener(this, 2.0f));
+		iv_resize_x2.setOnClickListener(new OnClickResizeListener(this, ResizeScale.x2.scale));
 		
 		final View iv_resize_x4 = findViewById(R.id.wc_btnResizeX4);
-		iv_resize_x4.setOnClickListener(new OnClickResizeListener(this, 4.0f));
+		iv_resize_x4.setOnClickListener(new OnClickResizeListener(this, ResizeScale.x4.scale));
+		
+//		final View iv_refresh = findViewById(R.id.wc_btnRefresh);
+//		iv_refresh.setOnClickListener
+//		(
+//			new View.OnClickListener()
+//			{
+//				@Override
+//				public void onClick(final View v)
+//				{
+//					SmallWebCameraViewApplication.this.stop();
+//					SmallWebCameraViewApplication.this.startup();
+//				}
+//				
+//			}
+//		);
 		
 		final View iv_close = findViewById(R.id.wc_btnClose);
 		iv_close.setOnClickListener
@@ -406,6 +428,35 @@ public class SmallWebCameraViewApplication extends SmallApplication
 			}
 		);
 		
+	}
+	
+	private enum ResizeScale {
+		x1(1.0f),
+		x2(2.0f),
+		x3(3.0f),
+		x4(4.0f),
+		;
+		public final float scale;
+		private ResizeScale(float scale) {
+			this.scale = scale;
+		}
+	}
+	
+	private void showResizeDialog()
+	{
+		final String[] items = new String[] {ResizeScale.x1.name(), ResizeScale.x2.name(), ResizeScale.x3.name(), ResizeScale.x4.name() };
+		final AlertDialog.Builder builder = new AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Light_Dialog);
+		builder.setTitle(getResources().getText(R.string.resize_title))
+				.setItems(items, new OnClickListener() {
+					@Override
+					public void onClick(final DialogInterface dialog, final int which) {
+						final OnClickResizeListener click = 
+								new OnClickResizeListener(SmallWebCameraViewApplication.this, ResizeScale.valueOf(items[which]).scale);
+						click.onClick(null);
+						getWindow().setWindowState(WindowState.NORMAL);
+					}
+				});
+		builder.show();
 	}
 	
 	private void sendUriApp(final String packageName)
