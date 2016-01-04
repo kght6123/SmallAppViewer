@@ -2,7 +2,6 @@ package jp.kght6123.smallappviewer.activity;
 
 import java.util.List;
 
-import jp.kght6123.smallappviewer.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -58,7 +57,7 @@ public class BrowserChangerActivity extends Activity
 			// リストダイアログを表示する
 			// 選択→そのブラウザで表示、長押し選択→ブラウザのアプリ設定
 			final AlertDialog.Builder builder = new AlertDialog.Builder(this, android.R.style.Theme_DeviceDefault_Light_Dialog);
-			builder.setTitle(getResources().getText(R.string.app_browser_changer_dialog_title))
+			builder.setCustomTitle(null)/*setTitle(getResources().getText(R.string.app_browser_changer_dialog_title))*/
 					.setAdapter(adapter, new OnClickListener() {
 						@Override
 						public void onClick(final DialogInterface dialog, final int which) {
