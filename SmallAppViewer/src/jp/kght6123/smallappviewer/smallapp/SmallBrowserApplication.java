@@ -22,6 +22,7 @@ import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
@@ -30,6 +31,8 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -260,6 +263,14 @@ public class SmallBrowserApplication extends SmallApplication
 		final ProgressBar progressBarForWeb = 
 				(ProgressBar)findViewById(R.id.progressBarForWeb);
 		
+		CookieManager.setAcceptFileSchemeCookies(true);
+		final CookieManager cookieManager = CookieManager.getInstance();
+		if (Build.VERSION.SDK_INT < 21 /*Build.VERSION_CODES.LOLLIPOP*/) {
+			CookieSyncManager.createInstance(this);
+		}
+		cookieManager.setAcceptCookie(true);
+		cookieManager.acceptCookie();
+				
 		final WebView webView = (WebView) findViewById(R.id.webview);
 		webView.setWebViewClient
 			(
@@ -544,9 +555,9 @@ public class SmallBrowserApplication extends SmallApplication
 			final WebSettings ws = webView.getSettings();
 			final NetworkInfo info = ((ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
 			if(info != null && info.isConnected())
-				defaultCacheMode = WebSettings.LOAD_CACHE_ELSE_NETWORK;
+				defaultCacheMode = WebSettings.LOAD_DEFAULT;// LOAD_CACHE_ONLY
 			else
-				defaultCacheMode = WebSettings.LOAD_CACHE_ONLY;
+				defaultCacheMode = WebSettings.LOAD_CACHE_ELSE_NETWORK;
 			ws.setCacheMode(defaultCacheMode);
 			
 			final boolean javaScriptDisabled = getIntent().getExtras() != null ? getIntent().getExtras().getBoolean(EXTRA_JAVASCRIPT_DISABLED, false) : false;

@@ -5,7 +5,7 @@
     <dimen name="width">200dp</dimen>
     <dimen name="height">300dp</dimen>
     <dimen name="iconSize">35dp</dimen>
-    <dimen name="actionBarIconSize">58dp</dimen>
+    <dimen name="actionBarIconSize">48dp</dimen>
     <dimen name="actionBarMarginLeft">7dp</dimen>
     <item name="btnAlpha" format="float" type="dimen">0.88</item>
 </resources>
